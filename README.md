@@ -1,5 +1,5 @@
 <html>
-<h1>Hibernate - INSERT (save) and SELECT (createQuery) demo</h1>
+<h1>Hibernate - INSERT, SELECT, UPDATE, DELETE demo</h1>
 <hr />
 <p>
 <b>Basic configuration Hibernate, inserting some records to table, update, delete, and select all records from table.</b><br />
