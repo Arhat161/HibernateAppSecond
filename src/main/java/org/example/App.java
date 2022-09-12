@@ -41,6 +41,18 @@ public class App {
                 System.out.println(person.getId() + " | " + person.getName() + " | " + person.getAge());
             }
 
+            // update information in one record
+            Person person = session.get(Person.class, 2);
+            person.setName("New name");
+            person.setAge(59);
+
+            // show information about record with id=2 in console
+            Person updatedPerson = session.get(Person.class, 2);
+            System.out.println(updatedPerson.getName());
+            System.out.println(updatedPerson.getAge());
+
+
+
             // close transaction
             session.getTransaction().commit();
 
