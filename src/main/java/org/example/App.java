@@ -72,6 +72,11 @@ public class App {
             List<Person> afterDeletingPersons = getAllPersonFromDatabase(session);
             printAllPersonsFromList(afterDeletingPersons);
 
+            // get record id after insert record in table of database
+            Person newPerson = new Person("Superstar", 99);
+            session.save(newPerson);
+            System.out.println("newPerson id = " + newPerson.getId());
+
             // close transaction
             session.getTransaction().commit();
 
